@@ -1,0 +1,9 @@
+    <div class="container" ng-controller="photoController" ng-init="getPhotos()">
+        <h3>Photos</h3>
+        <section ng-repeat="photo in photos">
+			<p><strong>Title: </strong>{{photo.title}}</p>
+			<a href="#photoDetails/{{photo.id}}">
+				<img src="{{photo.thumbnailUrl}}">
+			</a>
+        </section>
+    </div>

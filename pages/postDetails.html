@@ -1,0 +1,9 @@
+    <div class="container" ng-controller="postController" ng-init="getComment()">
+        <h3>Post</h3>
+        <section ng-repeat="comment in comments">
+        	<p><strong>Name: </strong>{{comment.name}}</p>
+        	<p><strong>Email: </strong>{{comment.email}}</p>
+			<p><strong>Comment: </strong>{{comment.body}}</p>
+        </section>
+        <a href="#/post">Return</a>
+    </div>

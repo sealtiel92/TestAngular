@@ -1,0 +1,29 @@
+body{
+	background-color: #00DCFF;
+}
+#container ul{
+	background-color: #00DCFF;
+}
+#container ul li{
+	display: inline-block;
+	padding: 10px 10px; 
+	background-color: #00DCFF;
+}
+#container ul li:hover{
+	background-color: #FFF;
+}
+.container{
+	background-color: #FF9600;
+	margin: 10px 10px;
+	padding: 20px 20px;
+}
+section{
+	background-color: #FFF;
+	margin: 10px 10px;
+	padding: 20px 20px;
+}
+#newPost{
+	margin: 10px 10px;
+	padding: 10px 10px; 
+	width: 50%;
+}

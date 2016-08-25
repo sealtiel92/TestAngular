@@ -1,0 +1,9 @@
+    <div class="container" ng-controller="photoController" ng-init="getPhoto()">
+        <h3>Photo</h3>
+        <section>
+        	<p><strong>Title: </strong>{{photo.title}}</p>
+        	<p><strong>Album: </strong>{{album.title}}</p>
+        	<img src="{{photo.url}}">
+        </section>
+        <a href="#/photo">Return</a>
+    </div>

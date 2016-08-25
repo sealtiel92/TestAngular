@@ -1,0 +1,17 @@
+
+    <div class="container" ng-controller="postController" ng-init="getPosts()">
+        <h3>Posts</h3>
+         <form novalidate id="newPost">
+            <input type="text" name="title" placeholder="Title" class="form-control" ng-model="newPost.title" required>
+            <br>
+            <textarea name="body" placeholder="Body" class="form-control" ng-model="newPost.body" required></textarea>
+            <br>
+            <input type="submit" ng-click="addPost(newPost)" value="Send" class="btn btn-primary" />
+          </form>
+
+        <section ng-repeat="post in posts">
+        	<strong>Title: </strong>
+			<a href="#postDetails/{{post.id}}">{{post.title}}</a>
+			<p><strong>Comment: </strong>{{post.body}}</p>
+        </section>
+    </div>
